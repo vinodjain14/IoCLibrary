@@ -24,7 +24,7 @@ export class IoCContainer {
 
     fetchService<T>(name: string): T {
         if(!this._dependencies[name]) {
-            throw new Error('Unresolved dependency ${name}');
+            throw new Error(`Unresolved dependency ${name}`);
         }
         return this._dependencies[name] as T;
     }

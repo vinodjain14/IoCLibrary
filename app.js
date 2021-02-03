@@ -41,6 +41,6 @@ container.bindService("IPizza", ["IDough", "IToppings"], Pizza);
 let c = container.fetchService("IPizza");
 c.makePizza();
 if (c.isPizzaReady())
-    console.log("Yeah, Pizza is ready!!!");
+    console.log("Yeah, Pizza is ready222!!!");
 else
     console.log("Please wait, Pizza is not ready yet.");
